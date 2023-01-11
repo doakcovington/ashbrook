@@ -1,3 +1,5 @@
+// WDGTR
+// NCWH
 import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
@@ -10,7 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Howdy
         </p>
         <span>
           <span>Learn </span>
