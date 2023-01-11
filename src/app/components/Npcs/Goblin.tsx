@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppSelector, useAppDispatch } from '../../hooks';
-import {selectHealth, selectAttack, decrementHealth, selectName} from '../../../features/npcs/goblin/goblinSlice';
+import {selectHealth, selectAttack, selectName} from '../../../features/npcs/goblin/goblinSlice';
 
 export const Goblin = () => {
   const health = useAppSelector(selectHealth);
@@ -10,8 +10,10 @@ export const Goblin = () => {
 
   return (
     <div>
-      <div>{name}</div>
-      <span>Health: {health}</span>
+      <span>{name}</span>
+      {health > 0 &&
+        <span>Health: {health}</span>
+      }
     </div>
   )
 }

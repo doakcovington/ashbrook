@@ -18,13 +18,13 @@ export const goblinSlice = createSlice({
   name: 'goblin',
   initialState,
   reducers: {
-    decrementHealth: (state, action: PayloadAction<number>) => {
+    decrementGoblinHealth: (state, action: PayloadAction<number>) => {
       state.health -= action.payload;
     }
   }
 })
 
-export const {decrementHealth} = goblinSlice.actions;
+export const {decrementGoblinHealth} = goblinSlice.actions;
 
 export const selectHealth = (state: RootState) => state.goblin.health;
 export const selectAttack = (state: RootState) => state.goblin.attack;
